@@ -1,0 +1,50 @@
+version: "2.0"
+volumes:
+  public_html:
+  data:
+      
+services:
+  php:
+    build: 
+      context: './php/'
+      args:
+       PHP_VERSION: 5.6
+    networks:
+      - backend
+    volumes:
+      - public_html:/var/www/html/
+    container_name: php
+  apache:
+    build:
+      context: './apache/'
+      args:
+       APACHE_VERSION: 2.4.32
+    depends_on:
+      - php
+      - mysql
+    networks:
+      - frontend
+      - backend
+    ports:
+      - "80:80"
+    volumes:
+      - public_html:/var/www/html/
+    container_name: apache
+  mysql:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - data:/var/lib/mysql
+    networks:
+      - backend
+    environment:
+      MYSQL_ROOT_PASSWORD: "rootpassword"
+      MYSQL_DATABASE: "dbtest"
+      MYSQL_USER: "otherUser"
+      MYSQL_PASSWORD: "password"
+    container_name: mysql
+networks:
+  frontend:
+  backend:
