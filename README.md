@@ -5,7 +5,7 @@ balenaCloud Lamp Stack
 This project creates three containerized services -- apache, mysql and php -- that together provide a basic LAMP stack.
 
 ```
-/lamp-stack/
+/balenaLamp/
 ├── .balena
 │   ├── secrets
 │   └── balena.yml
