@@ -28,7 +28,7 @@ Note that specific versions of each Docker image is defined in each _Dockerfile.
 Clone this repository, change into the balenaLamp directory and push to your application:
 
 ```
- $ git clone git@github.com:jtonello/balenaLamp.git
+ $ git clone git@github.com:jtonello/balena-lamp.git
  $ cd balena-lamp
  $ balena push <appname>
 ```
