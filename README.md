@@ -26,6 +26,8 @@ Note that specific versions of each Docker image is defined in each Dockerfile.t
 
 Clone this repository and then run:
 ```
+ $ git clone git@github.com:jtonello/balenaLamp.git
+ $ cd balenaLamp
  $ balena push <appname>
 ```
 
