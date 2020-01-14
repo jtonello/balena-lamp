@@ -24,6 +24,5 @@ Note that specific versions of the images are defined here. These could be repla
 Clone this repository and then run:
 ```
  $ balena push <appname>
-
 ```
 
