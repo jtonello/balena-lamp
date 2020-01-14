@@ -1,0 +1,10 @@
+build-variables:
+    global:
+        - MY_VAR_1=This is a variable
+    services:
+        mysql:
+            - MYSQL_ROOT_PASSWORD=rootpassword
+            - MYSQL_DATABASE=dbtest            
+            - MYSQL_USER=otherUser
+            - MYSQL_PASSWORD=password
+

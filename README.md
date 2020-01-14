@@ -19,7 +19,7 @@ Apache and PHP are build during the balena push action, but MYSQL is pulled from
 
 Two networks are used. The frontend network enables external connections to port 80. The backend network enables php and mysql to use non-public ports to reach apache.
 
-Note that specific versions of the images are defined here. These could be replaced with :latest or other versions that suit your needs. The mysql passwords should be changed for more production uses, and a future version will embed the passwords in a secrets file.
+Note that specific versions of the images are defined here. These could be replaced with :latest or other versions that suit your needs. The mysql passwords, database name and username are set as variables from the .balena/balena.yml file. You should change them for production uses, but be sure to update the php/index.php file to match. 
 
 Clone this repository and then run:
 ```

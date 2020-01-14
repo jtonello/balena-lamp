@@ -24,17 +24,12 @@ services:
       - "80:80"
     container_name: apache
   mysql:
-    image: mysql:5.7
+    build: ./mysql
     restart: always
     ports:
       - "3306:3306"
     networks:
       - backend
-    environment:
-      MYSQL_ROOT_PASSWORD: "rootpassword"
-      MYSQL_DATABASE: "dbtest"
-      MYSQL_USER: "otherUser"
-      MYSQL_PASSWORD: "password"
     container_name: mysql  
       
 networks:
