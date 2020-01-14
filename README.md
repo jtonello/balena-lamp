@@ -22,6 +22,8 @@ Two networks are used. The frontend network enables external connections to port
 Note that specific versions of the images are defined here. These could be replaced with :latest or other versions that suit your needs. The mysql passwords should be changed for more production uses, and a future version will embed the passwords in a secrets file.
 
 Clone this repository and then run:
-``` $ balena push <appname>
+```
+ $ balena push <appname>
+
 ```
 
