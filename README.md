@@ -24,7 +24,8 @@ Two networks are used. The frontend network enables external connections to port
 
 Note that specific versions of each Docker image is defined in each Dockerfile.template. These could be replaced with :latest or other versions that suit your needs. The mysql passwords, database name and username are set as variables from the .balena/balena.yml file. You should change them for production uses, but be sure to update the php/index.php file to match. 
 
-Clone this repository and then run:
+Clone this repository, change into the balenaLamp directory and push to your application:
+
 ```
  $ git clone git@github.com:jtonello/balenaLamp.git
  $ cd balenaLamp
