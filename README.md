@@ -5,7 +5,7 @@ balenaCloud Lamp Stack
 This project creates three containerized services -- _apache_, _mysql_ and _php_ -- that together provide a basic LAMP stack.
 
 ```
-/balenaLamp/
+/balena-lamp/
 ├── .balena
 │   ├── secrets
 │   └── balena.yml
@@ -29,7 +29,7 @@ Clone this repository, change into the balenaLamp directory and push to your app
 
 ```
  $ git clone git@github.com:jtonello/balenaLamp.git
- $ cd balenaLamp
+ $ cd balena-lamp
  $ balena push <appname>
 ```
 
