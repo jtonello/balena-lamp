@@ -12,7 +12,7 @@ This project creates three containerized services -- apache, mysql and php -- th
 ├── docker-compose.yml
 ├── php
 │   └── Dockerfile
-    └── index.php
+│   └── index.php
 ```
 
 Apache and PHP are build during the balena push action, but MYSQL is pulled from the public mysql:5.7 image. The apache service depends on both mysql and php and shares a the /var/www/html volume with php. This is the location of the main index.php file, which runs a test connection to mysql. Notice that the hostname is set to "mysql", which is resolvable by name based on the network configuration.
