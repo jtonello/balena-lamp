@@ -25,6 +25,11 @@ Two networks are used. The _frontend_ network enables external connections to po
 Note that specific versions of each Docker image is defined in each _Dockerfile.template_. These could be replaced with _:latest_ or other versions that suit your needs. The _mysql_ passwords, database name and username are set as variables from the _.balena/balena.yml_ file. You should change them for production uses, but be sure to update the _php/index.php_ file to match. 
 
 ### Deploy
+
+[![](https://balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy)
+
+__or__
+
 Clone this repository, change into the balena-lamp directory and push to your application:
 
 ```
