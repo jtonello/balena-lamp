@@ -26,7 +26,7 @@ Note that specific versions of each Docker image is defined in each _Dockerfile.
 
 ### Deploy
 
-[![](https://balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy)
+[![](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy)
 
 __or__
 
